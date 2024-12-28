@@ -1,14 +1,11 @@
 # Broken Todo
 
 A simple Todo Applications Follow the steps below to clone, set up, and run The Applications
----
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
-
----
 
 ## Installation
 
@@ -31,9 +28,7 @@ A simple Todo Applications Follow the steps below to clone, set up, and run The 
    ```bash
    npm install
    ```
-
----
-
+   
 ## Running the Application
 
 1. **Start the Development Server**
