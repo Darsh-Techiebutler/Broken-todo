@@ -42,12 +42,14 @@ export const TodoList = () => {
 
   const editTodo = (id) => {
     const editlog = todos.find((todo) => todo.id === id);
-    const newLabel = prompt("Edit Todo", editlog.label);
-    setTodos((todos) =>
-      todos.map((todo) =>
-        todo.id === id ? { ...todo, label: newLabel } : todo
-      )
-    );
+    const newLabel = prompt("Edit Todo data", editlog.label);
+    if (newLabel !== null) {
+      setTodos((todos) =>
+        todos.map((todo) =>
+          todo.id === id ? { ...todo, label: newLabel } : todo
+        )
+      );
+    }
   };
 
   const handleKeyUp = (e, id) => {

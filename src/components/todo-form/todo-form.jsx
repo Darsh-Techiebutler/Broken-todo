@@ -19,7 +19,6 @@ export const TodoForm = ({ setTodos }) => {
       handleAddTodo();
     }
   };
-
   return (
     <div className="todo-form">
       <input
