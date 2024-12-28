@@ -7,7 +7,7 @@ export const TodoForm = ({ setTodos }) => {
   const [task, setTask] = React.useState("");
   const handleAddTodo = () => {
     if (task == "") {
-      alert("Task is required");
+      alert("Todo is requir");
       return;
     }
     setTodos((todo) => [...todo, { id: Math.random(), label: task }]);
