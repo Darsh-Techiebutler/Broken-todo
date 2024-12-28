@@ -12,16 +12,16 @@ A simple Todo Applications Follow the steps below to clone, set up, and run The 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/Darsh-Techiebutler/Broken-todo.git
+   https://github.com/Darsh-Techiebutler/Broken-todo.git
    ```
 
-2. **Navigate to the Project Directory**
+3. **Navigate to the Project Directory**
 
    ```bash
    cd Broken-todo
    ```
 
-3. **Install Dependencies**
+4. **Install Dependencies**
 
    Run the following command to install the necessary packages:
 
