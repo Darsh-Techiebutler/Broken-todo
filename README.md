@@ -31,7 +31,7 @@ A simple Todo Applications Follow the steps below to clone, set up, and run The 
    
 ## Running the Application
 
-1. **Start the Development Server**
+1. **Start the Server**
 
    Run the following command to start the application:
 
@@ -39,10 +39,8 @@ A simple Todo Applications Follow the steps below to clone, set up, and run The 
    npm start
    ```
 
-2. **Access the Application**
-
+2. **Running Applications**
    Open your web browser and navigate to:
-
    ```
    http://localhost:3000
    ```
