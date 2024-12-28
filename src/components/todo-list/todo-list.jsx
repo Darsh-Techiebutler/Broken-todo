@@ -40,6 +40,16 @@ export const TodoList = () => {
     console.log(todos);
   };
 
+  const editTodo = (id) => {
+    const editlog = todos.find((todo) => todo.id === id);
+    const newLabel = prompt("Edit Todo", editlog.label);
+    setTodos((todos) =>
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, label: newLabel } : todo
+      )
+    );
+  };
+
   const handleKeyUp = (e, id) => {
     if (e.keyCode === 13) {
       toggleCheck(id);
@@ -59,6 +69,7 @@ export const TodoList = () => {
                 onClick={() => toggleCheck(todoItem.id)}
                 onKeyUp={(e) => handleKeyUp(e, todoItem.id)}
                 onDelete={() => handleDelete(todoItem.id)}
+                onEdit={() => editTodo(todoItem.id)}
               />
             </div>
           ))}

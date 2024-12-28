@@ -5,8 +5,11 @@ import "./todo-form.scss";
 export const TodoForm = ({ setTodos }) => {
   // const { todos } = React.useContext(TodosContext);
   const [task, setTask] = React.useState("");
-
   const handleAddTodo = () => {
+    if (task == "") {
+      alert("Task is required");
+      return;
+    }
     setTodos((todo) => [...todo, { id: Math.random(), label: task }]);
     setTask("");
   };
