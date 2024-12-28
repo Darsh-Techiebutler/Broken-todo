@@ -44,11 +44,11 @@ export const App = () => {
   return (
     <div className="root">
       <TodosContext.Provider value={{ todos, setTodos }}>
-        {/* Props passing in the Todo From for the set add the data for*/}
         <TodoForm setTodos={setTodos} />
         <TodoResults />
         <TodoList />
       </TodosContext.Provider>
+
     </div>
   );
 };
