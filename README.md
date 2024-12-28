@@ -1,7 +1,5 @@
 # Broken Todo
-
-A simple Todo Applications Follow the steps below to clone, set up, and run The Applications
-
+Follow the steps below to clone, set up, and run The Applications
 ## Table of Contents
 
 - [Installation](#installation)
