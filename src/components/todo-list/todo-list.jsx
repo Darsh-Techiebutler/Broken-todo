@@ -42,11 +42,11 @@ export const TodoList = () => {
 
   const editTodo = (id) => {
     const editlog = todos.find((todo) => todo.id === id);
-    const newLabel = prompt("Edit Todo data", editlog.label);
-    if (newLabel !== null) {
+    const newlog = prompt("Edit Todo data", editlog.label);
+    if (newlog !== null) {
       setTodos((todos) =>
         todos.map((todo) =>
-          todo.id === id ? { ...todo, label: newLabel } : todo
+          todo.id === id ? { ...todo, label: newlog } : todo
         )
       );
     }
